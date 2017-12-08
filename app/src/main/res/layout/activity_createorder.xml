@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/atvResName"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/atvResName"
+        android:layout_marginTop="100dp"
+        android:text="Restaurant Name" />
+
+    <AutoCompleteTextView
+        android:id="@+id/atvResName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView7"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etNumber"
+        android:layout_alignStart="@+id/etNumber"
+        android:layout_below="@+id/atvResName"
+        android:layout_marginTop="16dp"
+        android:text="Nos. of persons" />
+
+    <EditText
+        android:id="@+id/etNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/atvResName"
+        android:layout_alignRight="@+id/atvResName"
+        android:layout_below="@+id/textView9"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etNumber"
+        android:layout_alignStart="@+id/etNumber"
+        android:layout_below="@+id/etNumber"
+        android:layout_marginTop="16dp"
+        android:text="Date" />
+
+    <EditText
+        android:id="@+id/etDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/etNumber"
+        android:layout_alignRight="@+id/etNumber"
+        android:layout_below="@+id/textView10"
+        android:ems="10"
+        android:inputType="date"
+        android:onClick="setDate"/>
+
+    <Button
+        android:id="@+id/btnOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etDate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp"
+        android:text="Order Food!"
+        android:clickable="false"
+        android:textAppearance="?actionBarPopupTheme"
+        android:textSize="24sp"/>
+
+
+</RelativeLayout>

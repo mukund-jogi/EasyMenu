@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E53935"
+    tools:context="com.digicorp.easymenu.UI.LoginActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etEmailId"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/etEmailId"
+        android:layout_marginTop="108dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Email Id"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/etEmailId"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textColor="#FFFFFF"
+        android:ems="10"
+        android:text="mukund.jogi@digi-corp.com"
+        android:hint=" example@xyz.com"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/etEmailId"
+        android:layout_alignStart="@+id/etEmailId"
+        android:layout_below="@+id/etEmailId"
+        android:layout_marginTop="16dp"
+        android:text="mukund123"
+        android:textColor="#FFFFFF"
+        android:ems="10"
+        android:hint=" password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btnSubmitLogIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:elevation="16dp"
+        android:text="Log In" />
+
+
+</RelativeLayout>

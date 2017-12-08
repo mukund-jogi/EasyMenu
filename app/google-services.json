@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "444209570871",
+    "firebase_url": "https://easy-menu-58983.firebaseio.com",
+    "project_id": "easy-menu-58983",
+    "storage_bucket": "easy-menu-58983.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:444209570871:android:652cdf5c61b2159d",
+        "android_client_info": {
+          "package_name": "com.digicorp.easymenu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "444209570871-e4baudmvkrlhoa4fqevgrtdo1pr6qqld.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.digicorp.easymenu",
+            "certificate_hash": "cf5a51ac736d92f3f3228fe0ca336d490e80280a"
+          }
+        },
+        {
+          "client_id": "444209570871-d3e7ga9daqtib8cgvj31d7muc4d8f0r1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0Av4MSqgGGHw27xKVfZdwE4b3p26lEAM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "444209570871-d3e7ga9daqtib8cgvj31d7muc4d8f0r1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
