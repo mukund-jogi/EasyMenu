@@ -28,7 +28,7 @@
         <activity android:name=".UI.CreateOrderItem" />
         <activity android:name=".UI.OrderItemType" />
         <activity android:name=".UI.ListItemsActivity" />
-
+        <activity android:name=".UI.RestaurantOrderDetails"></activity>
     </application>
 
 </manifest>
