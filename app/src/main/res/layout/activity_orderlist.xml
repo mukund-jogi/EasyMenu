@@ -42,7 +42,7 @@
             android:layout_centerHorizontal="true"
             android:fontFamily="sans-serif-medium"
             android:paddingTop="16dp"
-            android:text="Hey! you ordered nothing"/>
+            android:text="Hey!!You ordered nothing"/>
 
     </RelativeLayout>
 
