@@ -33,7 +33,7 @@
         android:layout_alignStart="@+id/etNumber"
         android:layout_below="@+id/atvResName"
         android:layout_marginTop="16dp"
-        android:text="Nos. of persons" />
+        android:text="Nos. of person" />
 
     <EditText
         android:id="@+id/etNumber"
@@ -42,6 +42,7 @@
         android:layout_alignEnd="@+id/atvResName"
         android:layout_alignRight="@+id/atvResName"
         android:layout_below="@+id/textView9"
+        android:text="1"
         android:ems="10"
         android:inputType="number" />
 
@@ -74,7 +75,6 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="53dp"
         android:text="Order Food!"
-        android:clickable="false"
         android:textAppearance="?actionBarPopupTheme"
         android:textSize="24sp"/>
 

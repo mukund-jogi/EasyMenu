@@ -4,9 +4,16 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_above="@id/tvMonth"
+        android:layout_height="1dp"
+        android:background="#3b3838" />
+
     <TextView
         android:id="@+id/tvListItemType"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
+        android:background="#9f9797"
         android:layout_height="wrap_content"
         android:textAppearance="?android:textAppearanceMedium"
         android:padding="8dp" />

@@ -1,4 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list_items_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:paddingBottom="40dp"/>
+
+    <ProgressBar
+        android:id="@+id/pbar_fooditemlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <Button
+        android:id="@+id/btnSubmitOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="Submit Order"
+        android:textAppearance="?android:textAppearanceLargeInverse"
+        android:textColor="#ffff"
+        android:layout_alignParentBottom="true" />
+
+
+</RelativeLayout>
+
+
+<!--
 <android.support.constraint.ConstraintLayout
 
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -9,35 +50,63 @@
     android:orientation="vertical"
     tools:context="com.digicorp.easymenu.UI.ListItemsActivity">
 
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
 
     <android.support.v7.widget.RecyclerView
-        android:paddingBottom="50dp"
-        android:clipToPadding="false"
         android:id="@+id/list_items_recyclerview"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:clipToPadding="false"
+        android:paddingBottom="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSubmitOrder"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <!--<android.support.design.widget.FloatingActionButton-->
-        <!--android:id="@+id/fabAddItem"-->
-        <!--android:layout_width="50dp"-->
-        <!--android:layout_height="153dp"-->
-        <!--android:padding="20dp"-->
-        <!--android:layout_marginRight="8dp"-->
-        <!--android:layout_marginTop="450dp"-->
-        <!--android:elevation="16dp"-->
-        <!--android:src="@drawable/ic_add_black_48dp"-->
-        <!--app:backgroundTint="@color/colorPrimary"-->
-        <!--app:layout_constraintBottom_toBottomOf="parent"-->
-        <!--app:layout_constraintEnd_toEndOf="@+id/list_items_recyclerview"-->
-        <!--app:layout_constraintHorizontal_bias="1.0"-->
-        <!--app:layout_constraintStart_toStartOf="@+id/list_items_recyclerview"-->
-        <!--app:layout_constraintTop_toTopOf="@+id/list_items_recyclerview"-->
-        <!--app:layout_constraintVertical_bias="0.111" />-->
+
+    <ProgressBar
+        android:id="@+id/pbar_fooditemlist"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSubmitOrder"
+        app:layout_constraintEnd_toEndOf="@+id/list_items_recyclerview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.43" />
+
+    <Button
+        android:id="@+id/btnSubmitOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="Submit Order"
+        android:textAppearance="?android:textAppearanceLargeInverse"
+        android:textColor="#ffff"
+        app:layout_constraintEnd_toEndOf="@+id/pbar_fooditemlist"
+        app:layout_constraintStart_toStartOf="@+id/pbar_fooditemlist"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="462dp" />
+
+
+    &lt;!&ndash;<android.support.design.widget.FloatingActionButton&ndash;&gt;
+    &lt;!&ndash;android:id="@+id/fabAddItem"&ndash;&gt;
+    &lt;!&ndash;android:layout_width="50dp"&ndash;&gt;
+    &lt;!&ndash;android:layout_height="153dp"&ndash;&gt;
+    &lt;!&ndash;android:padding="20dp"&ndash;&gt;
+    &lt;!&ndash;android:layout_marginRight="8dp"&ndash;&gt;
+    &lt;!&ndash;android:layout_marginTop="450dp"&ndash;&gt;
+    &lt;!&ndash;android:elevation="16dp"&ndash;&gt;
+    &lt;!&ndash;android:src="@drawable/ic_add_black_48dp"&ndash;&gt;
+    &lt;!&ndash;app:backgroundTint="@color/colorPrimary"&ndash;&gt;
+    &lt;!&ndash;app:layout_constraintBottom_toBottomOf="parent"&ndash;&gt;
+    &lt;!&ndash;app:layout_constraintEnd_toEndOf="@+id/list_items_recyclerview"&ndash;&gt;
+    &lt;!&ndash;app:layout_constraintHorizontal_bias="1.0"&ndash;&gt;
+    &lt;!&ndash;app:layout_constraintStart_toStartOf="@+id/list_items_recyclerview"&ndash;&gt;
+    &lt;!&ndash;app:layout_constraintTop_toTopOf="@+id/list_items_recyclerview"&ndash;&gt;
+    &lt;!&ndash;app:layout_constraintVertical_bias="0.111" />&ndash;&gt;
 
 </android.support.constraint.ConstraintLayout>
+-->

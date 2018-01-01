@@ -14,21 +14,46 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".UI.MainActivity"
-            android:label="@string/app_name">
+            android:theme="@style/Theme.Design.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".UI.LoginActivity" />
-        <activity android:name=".UI.SignUpActivity" />
-        <activity android:name=".UI.OrderList" />
-        <activity android:name=".UI.CreateOrderActivity" />
-        <activity android:name=".UI.CreateOrderItem" />
-        <activity android:name=".UI.OrderItemType" />
-        <activity android:name=".UI.ListItemsActivity" />
-        <activity android:name=".UI.RestaurantOrderDetails"></activity>
+        <activity
+            android:name=".UI.LoginActivity"
+            android:label="Login"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".UI.SignUpActivity"
+            android:label="Sign Up"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".UI.OrderList"
+            android:label="Restaurant List"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".UI.CreateOrderActivity"
+            android:label="Create Order"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".UI.CreateOrderItem"
+            android:label="Create Item"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".UI.OrderItemType"
+            android:label=""
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".UI.ListItemsActivity"
+            android:label="Food Item List"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".UI.RestaurantOrderDetails"
+            android:label="Order Details"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".UI.OrderListV2Activity"></activity>
     </application>
 
 </manifest>

@@ -7,11 +7,58 @@
     tools:context="com.digicorp.easymenu.UI.RestaurantOrderDetails">
 
 
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="4dp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/tvItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#ffff"
+            android:layout_weight="1"
+            android:text="FoodItem"/>
+
+        <TextView
+            android:id="@+id/tvQuantiy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#ffff"
+            android:layout_weight="1"
+            android:text="Quantity"/>
+
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#ffff"
+            android:layout_weight="1"
+            android:text="Price"/>
+    </LinearLayout>
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recyclerViewRestaurantDetails"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headerLayout"
+        android:orientation="vertical"
+        android:paddingTop="8dp">
     </android.support.v7.widget.RecyclerView>
+
+    <ProgressBar
+        android:id="@+id/pbar_orderlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
 
 </RelativeLayout>

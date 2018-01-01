@@ -4,10 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context = ".UI.ListItemsActivity">
 
-    <item
+    <!--<item
         android:title="Create Order"
         android:id="@+id/tbCreateOrder"
-        />
+        />-->
     <item android:title="Logout"
-        android:id="@+id/tbLogout"/>
+        android:id="@+id/tbLogout"
+        app:showAsAction="ifRoom"/>
 </menu>

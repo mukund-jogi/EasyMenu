@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context = ".UI.ListItemsActivity">
 
-    <item
-        android:title="Submit Order"
-        android:id="@+id/tbDone"
-        />
+
     <item android:title="Add Items"
-        android:id="@+id/tbAddItems"/>
+        android:icon="@drawable/ic_add_black_48dp"
+        android:id="@+id/tbAddItems"
+        android:foreground="@color/colorPrimary"
+        app:showAsAction="ifRoom"/>
 </menu>
