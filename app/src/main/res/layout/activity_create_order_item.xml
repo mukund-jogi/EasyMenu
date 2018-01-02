@@ -28,6 +28,7 @@
         android:layout_alignLeft="@+id/tvItemType"
         android:layout_alignStart="@+id/tvItemType"
         android:layout_below="@+id/tvItemType"
+        android:hint="e.g. Soup, Ice cream, Pizza"
         android:inputType="text">
     </AutoCompleteTextView>
 
@@ -53,6 +54,7 @@
         android:layout_alignStart="@+id/tvItemName"
         android:layout_below="@+id/tvItemName"
         android:imeOptions="actionDone"
+        android:hint="e.g.Tomato Soup,Mexican Sandwich"
         android:inputType="text">
     </AutoCompleteTextView>
 
