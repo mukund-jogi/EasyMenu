@@ -29,7 +29,7 @@
         android:layout_alignStart="@+id/tvItemType"
         android:layout_below="@+id/tvItemType"
         android:hint="e.g. Soup, Ice cream, Pizza"
-        android:inputType="text">
+        android:inputType="textCapWords">
     </AutoCompleteTextView>
 
 
@@ -55,7 +55,7 @@
         android:layout_below="@+id/tvItemName"
         android:imeOptions="actionDone"
         android:hint="e.g.Tomato Soup,Mexican Sandwich"
-        android:inputType="text">
+        android:inputType="textCapWords">
     </AutoCompleteTextView>
 
     <LinearLayout
@@ -78,10 +78,9 @@
             android:id="@+id/pbar_recyclerImgs"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:visibility="gone"
             android:layout_centerInParent="true" />
     </LinearLayout>
-
-
 
     <Button
         android:id="@+id/btnDone"
