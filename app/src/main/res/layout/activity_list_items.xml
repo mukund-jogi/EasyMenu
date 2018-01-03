@@ -32,7 +32,7 @@
             android:layout_centerHorizontal="true"
             android:fontFamily="sans-serif"
             android:paddingTop="8dp"
-            android:text="Your Order List is Empty"
+            android:text="Your Food List is Empty"
             android:textAppearance="?android:textAppearanceSmall"
             android:textColor="#A2AAB0"/>
 

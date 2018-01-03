@@ -12,7 +12,7 @@
 
         <TextView
             android:id="@+id/tvResItemName"
-            android:layout_width="wrap_content"
+            android:layout_width="80dp"
             android:layout_height="wrap_content"
             android:textAppearance="?android:textAppearanceMedium"
             android:paddingLeft="16dp"
