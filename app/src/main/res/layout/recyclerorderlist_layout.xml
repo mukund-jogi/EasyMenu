@@ -52,8 +52,8 @@
             android:layout_toLeftOf="@+id/tvPriceNumber"
             android:layout_weight="1"
             android:paddingRight="22dp"
-            android:text="Bill Rs."
-            android:textAppearance="?android:textAppearanceMedium" />
+            android:text=" ₹ "
+            android:textAppearance="?android:textAppearanceLarge" />
 
     <TextView
         android:id="@+id/tvPriceNumber"

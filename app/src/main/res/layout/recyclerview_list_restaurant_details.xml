@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    android:background="#d9cece"
     android:layout_height="wrap_content">
 
     <LinearLayout
         android:id="@+id/headerLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:background="#d9cece"
+        android:paddingTop="4dp"
         android:paddingBottom="8dp">
 
         <TextView
@@ -36,12 +38,22 @@
             android:textAppearance="?android:textAppearanceMedium"
             android:layout_weight="1"
             android:text="Price"/>
+
     </LinearLayout>
+
+    <android.support.v7.widget.AppCompatRatingBar
+        android:id="@+id/ratingBarRestDetails"
+        android:layout_below="@id/headerLayout"
+        style="?android:attr/ratingBarStyleIndicator"
+        android:layout_marginLeft="10dp"
+        android:isIndicator="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="#3b3838"
-        android:layout_below="@id/headerLayout"/>
+        android:layout_below="@id/ratingBarRestDetails"/>
 
 </RelativeLayout>

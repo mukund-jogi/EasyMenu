@@ -23,7 +23,7 @@
         </activity>
         <activity
             android:name=".UI.LoginActivity"
-            android:label="Login"
+            android:label="Log In"
             android:theme="@style/AppTheme" />
         <activity
             android:name=".UI.SignUpActivity"
@@ -31,7 +31,7 @@
             android:theme="@style/AppTheme" />
         <activity
             android:name=".UI.OrderList"
-            android:label="Restaurant List"
+            android:label="Easy Menu"
             android:theme="@style/AppTheme" />
         <activity
             android:name=".UI.CreateOrderActivity"
